@@ -6,10 +6,8 @@ function! session#on_bufread_list()
   setlocal nowrap
   setlocal nonumber norelativenumber
 
-  " v:oldfilesの上位10件を表示
   call setline(1, v:oldfiles[:9])
 
-  " 読み取り専用＋Enterマッピング
   setlocal readonly
   nnoremap <buffer> <CR> :call session#open_selected()<CR>
 endfunction
