@@ -7,7 +7,7 @@ function! ShowFileList()
   setlocal noswapfile
   setlocal nowrap
   setlocal nonumber norelativenumber
-  call setline(1, v:oldfiles)
+  call setline(1, v:oldfiles[:9])
   setlocal readonly
   nnoremap <buffer> <CR> :call OpenSelectedFile()<CR>
 endfunction
