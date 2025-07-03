@@ -16,5 +16,5 @@ let g:indent_guides_guide_size = 1
 repo = 'lambdalisue/vim-fern'
 hook_add = '''
 let g:fern#default_hidden = 1
-nnoremap ]e :Fern . -drawer<CR>
+nnoremap @e :Fern . -drawer<CR>
 '''
